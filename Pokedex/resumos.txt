@@ -1,0 +1,33 @@
+ Requisição HTML
+
+ URL: https://pokeapi.co/api/v2/pokemon
+     ${IP/Endereço}/${path = caminho de ideentificação do recurso}
+
+Request method: GET | POST | PUT | DELETE | PATCH
+
+Request Headers -> Configuração da requisição (ex.: idioma, autenticação)
+
+Body -> conteúdo da requisição
+
+STATUS CODE -> número que indica o que aconteceu com a requisição.
+200: sucesso
+300: redirect
+400: erro no cliente
+500: erro no servidor
+
+Status Code: 200 OK
+Responde Headers
+Response Body
+
+
+*A execução do fetch retorna uma Promise(promessa de um resultado)
+*then processa o retorno da promise 
+
+Query String
+A QueryString é nada mais do que conjuntos de pares/valores anexados a URL (após o símbolo ?).Seu uso é simples, após a URL de determinada página, adicionamos o primeiro valor usando a seguinte sintaxe: ?Chave=Valor. Para passarmos mais de um conjunto, os mesmos devem ser concatenados usando o caractere coringa &.
+EX.: www.exemplo.com/pagina?param1=valor1&param2=valor2 
+Query String -> param1=valor1&param2=valor2
+
+
+API e Endpoint 
+Uma API é um conjunto de protocolos e ferramentas para facilitar a interação entre dois aplicativos. Um endpoint é um lugar na API onde a troca acontece. Endpoints são URIs (Uniform Resource Identifiers) em uma API que um aplicativo pode acessar. Todas as APIs têm endpoints.
