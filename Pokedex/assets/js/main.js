@@ -12,11 +12,24 @@ function createElementList(pokemon){
      <span class="number">#${pokemon.id}</span>
         <span class="name">${pokemon.name}</span>
         <div class="detail">
-        <ol class="types">
-            ${pokemon.types.map((type) => `<li class="type ${pokemon.type}">${type}</li>`).join('')}            
+            <ol class="types">
+                ${pokemon.types.map((type) => `<li class="type ${pokemon.type}">${type}</li>`).join('')}            
+            </ol>
+            <img class="pokemon-list-item-image" src="${pokemon.photo}" alt="${pokemon.name}">
+        </div>
+    <div class="xp-abilities">   
+        <p class="xp-text">XP</p>
+        <p class="xp-text">${pokemon.experience}</p>
+
+        <ol class="abilities">
+            ${pokemon.abilities.map((type) => `<span class="material-symbols-outlined">
+            swords
+            </span><li class="type ${pokemon.ability}">${type}</li>`).join('')}            
         </ol>
-        <img class="pokemon-list-item-image" src="${pokemon.photo}" alt="${pokemon.name}">
-    </div></li>`
+    </div>
+    
+    
+    </li>`
     
 }
 

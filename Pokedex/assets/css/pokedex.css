@@ -26,6 +26,62 @@
 
 }
 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 5,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 16
+}
+
+
+.xp-abilities{
+    display: none;
+}
+
+.xp-abilities{
+    /* display: grid;
+    grid-template-columns: .5fr .5fr 3fr; */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: brightness(96%);
+    font-size: .625rem;
+    color: #fff;
+    border-radius: 1rem;
+    margin-top: .7rem;
+    padding:.5rem;
+  
+}
+
+.pokemon-list-item:hover{
+    
+    transform: scale(1.2);
+    transition: 300ms;
+
+}
+
+.pokemon-list-item:hover .xp-abilities{
+        display: grid;
+        grid-template-columns: .5fr .5fr 3fr;
+
+}
+
+
+.abilities{
+    list-style: none;
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.xp-text{
+    font-size: .8rem;
+    margin: .06rem
+}
+
 .pokemons .pokemon-list-item .detail .pokemon-list-item-image {
     
     max-width: 100%;
