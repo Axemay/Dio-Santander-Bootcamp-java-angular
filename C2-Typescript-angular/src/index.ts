@@ -111,12 +111,32 @@ const bot: robot = {
 }
 
 interface robot2{
-    id: number;
+    id: number | string;
     name: string;
+    sayHello(): string;
 }
 
 const bot2: robot2 = {
     id: 1,
-    name: "Megaman"
+    name: "Megaman",
+    sayHello: function (): string {
+        throw new Error("Function not implemented.");
+    }
 }
 
+//Classe utilizando a interface
+class Pessoa implements robot2{
+    id: number | string;
+    name: string;
+
+    constructor(id: string | number, name: string){
+        this.id = id;
+        this.name = name;
+    }
+    sayHello(): string {
+        return "Hello, " + this.name;
+    }
+}
+
+const p = new Pessoa(1, "Maria");
+console.log(p.sayHello());
