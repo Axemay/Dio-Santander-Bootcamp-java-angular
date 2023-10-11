@@ -1,0 +1,28 @@
+Typescript é um superset para javascript (significa que ele tem todas as qualidades do javascript e mais um pouco)
+Permite:
+-> tipagem 
+-> Class (mais "poder")
+-> Interface 
+-> Enums 
+-> Identificar erros em tempo de desenvolvimento 
+
+O código typescript passa por um processo de transpilação (tradução + compilação) para javascript.
+
+TS oferece mais segurança e facilidadde para o dev.
+Site para instalação: https://www.typescriptlang.org/
+
+É possível instalar como dependência de um projeto ou de forma global.
+-> iniciar projeto node: npm init -y
+
+-> instalar o typescript no projeto localmente: npm install typescript -D 
+o -D indica que será instalado apenas como dependência de desenvolvimento
+
+-> (-) iniciar o typescript compiler para traduzir o arquivo ts para js: npx tsc src/index.ts 
+
+-> (+) Criar arquivo tsconfig.js para configurar o ts compiler automático: npx tsc --init
+-> Com o tsconfig criado, para executar: npx tsc
+
+-> Para evitar precisar executar dois comandos, configuramos o arquivo package.json incluindo um start com os comandos que devem ser executados:   "start":"npx tsc && node build/index.js",
+Após configurado, o comando para execução será: npm run start
+
+Executar arquivo no node: node caminhoarquivo (Ex.: node src/index.ts)

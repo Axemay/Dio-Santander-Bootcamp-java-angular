@@ -1,0 +1,18 @@
+DOM -> Document Object Model
+
+Shadow DOM -> é uma DOM "fantasma" como se fosse um documento dentro de outro documento.
+É possível trabalhar com a Shadow DOM de forma encapsulada (sem interferir na DOM principal)
+
+
+Site CAN I USE indica a compatibilidade com o navegador: https://caniuse.com/
+
+
+Componente -> é um conjunto de elementos.
+Todo componente é  uma função javascript que vai retornar mais javascript, html  e css.
+
+
+<script src="src/components/CardNews.js" defer></script> O comando defer faz com que o script só seja executado após a criação da DOM.
+
+
+Obs: todo nome de componente precisa ter hífen, como "card-news".
+

@@ -15,6 +15,7 @@
     padding: 1rem;
     border-radius: 1rem;
     background-color: #49d0b0;
+    
 }
 
 
@@ -22,10 +23,8 @@
 .pokemon-list-item .detail {
     display: flex;
     flex-direction: row;
-   
     align-items: center;
     justify-content: space-between;
-
 }
 
 
@@ -40,9 +39,11 @@
 
 .xp-abilities{
     display: none;
+    
 }
 
 .xp-abilities{
+    
     justify-content: center;
     align-items: center;
     backdrop-filter: brightness(96%);
@@ -59,14 +60,12 @@
 .pokemon-list-item:hover{
     z-index: 1;
     transform: scale(1.05);
-    transform-box:view-box;
-    transition: 500ms;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    
-    
+    transition: all 3s;
 }
 
 .pokemon-list-item:hover .xp-abilities{
+    
         display: grid;
         grid-template-columns: .5fr .5fr 3fr;
         
@@ -81,6 +80,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    
 }
 
 .xp-text{
