@@ -31,3 +31,7 @@ Query String -> param1=valor1&param2=valor2
 
 API e Endpoint 
 Uma API é um conjunto de protocolos e ferramentas para facilitar a interação entre dois aplicativos. Um endpoint é um lugar na API onde a troca acontece. Endpoints são URIs (Uniform Resource Identifiers) em uma API que um aplicativo pode acessar. Todas as APIs têm endpoints.
+
+
+Desafio realizado
+Inclusão de informaçõess de XP e habilidades com hover.
