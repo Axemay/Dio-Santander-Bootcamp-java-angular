@@ -26,3 +26,6 @@ o -D indica que será instalado apenas como dependência de desenvolvimento
 Após configurado, o comando para execução será: npm run start
 
 Executar arquivo no node: node caminhoarquivo (Ex.: node src/index.ts)
+
+
+

@@ -1,4 +1,10 @@
 "use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -92,3 +98,53 @@ class Pessoa {
 }
 const p = new Pessoa(1, "Maria");
 console.log(p.sayHello());
+//Classe
+class Character {
+    constructor(name, strength, skill) {
+        this.name = name;
+        this.strength = strength;
+        this.skill = skill;
+    }
+    atttack() {
+        console.log(`Attack with ${this.strength} points`);
+    }
+}
+const p1 = new Character('Fred', 10, 96);
+p1.atttack();
+/* Data modifiers
+public -> pode ser acessada em qualquer local
+private -> só pode ser acessada dentro da classe
+protected -> só pode ser acessada pela própria classe e suas subclasses
+
+Obs.: pode ser utilizado em propriedades e métodoss.
+*/
+//subclasse
+class Mage extends Character {
+    constructor(name, strength, skill, magicPoints) {
+        super(name, strength, skill);
+        this.magicPoints = magicPoints;
+    }
+}
+//generics
+// Os três pontinhos (operador de spread) significa que aceita diversos itens 
+function concatArray(...itens) {
+    return new Array().concat(...itens);
+}
+const numArray = concatArray([1, 8], [5]);
+const stgArray = concatArray(["Shadowheart", "Karlach"], ["Astarion"]);
+console.log(numArray.sort());
+console.log(stgArray);
+//decorators 
+function ExibirNome(target) {
+    console.log(target);
+}
+let Funcionario = class Funcionario {
+};
+Funcionario = __decorate([
+    ExibirNome
+], Funcionario);
+let Quincas = class Quincas {
+};
+Quincas = __decorate([
+    ExibirNome
+], Quincas);

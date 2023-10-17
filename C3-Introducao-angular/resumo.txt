@@ -1,0 +1,68 @@
+O Angular é um framework com foco em SPA (Single Page Application) mantido pela Google.
+
+Sobre o Angular:
+-> framework baseado em javascript 
+-> Typescript como linguagem principal 
+-> SPAs são o seu foco 
+-> Componentes são a base da arquitetura 
+-> Estrutura organizada e bem definida 
+-> Sistema de Tooling muito rico: CLI, HTTP, Router 
+
+
+Exemplos de frameworks SPA: 
+-> Angular 
+-> React 
+-> Aurelia
+-> Vue 
+
+
+Angular Versus React
+Angular: curva de aprendizado maior 
+React: curva de aprendizado menor 
+
+Angular: deficit de profissionais no mercado 
+React: bastante mercado 
+
+Angular: estrutura bem definida, mas muito setup (mais organizado)
+React: é uma biblioteca com baixo nível de setup (mais aberto) 
+
+Angular: permite utilizar bibliotecas de terceiros, mas raramente é necessário, pois é muito completo
+React: utiliza muitas bibliotecas de terceiros
+
+Angular: permite apenas javascript, mas a tendência de mercado é Typescript 
+React: recentemente o mercado começou a exigir typescript também 
+
+Angular: menos novidade
+React: comunidade mais ativa e novidades recorrentes
+
+Angular: transição para o mobile é mais difícil
+React: transição facilitada para mobile com react native
+
+
+Resumo da batalha:
+
+Powered by 
+Angular: Google
+React: Facebook
+
+Definition
+Angular: framework
+React: library 
+
+Templating 
+Angular: HHTML + TS 
+React: JS + JSX 
+
+Binding 
+Angular: 2 way
+React: uni-directional 
+
+DOM 
+Angular: Reegular DOM 
+React: Virtual DOM 
+
+Application logic/static 
+Angular: seervices 
+React: flux/redux ou context api 
+
+
