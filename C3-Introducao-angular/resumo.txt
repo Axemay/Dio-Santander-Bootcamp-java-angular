@@ -66,3 +66,43 @@ Angular: seervices
 React: flux/redux ou context api 
 
 
+As 4 camadas de uma Web App: COMPONENTES, GERENCIAMENTO DE ESTADO, ROTEAMENTO e RENDERIZAÇÃO 
+
+-> Componente é um elemento visual, customizável e reutilizável. (Ex.: card, botão, banner)
+
+-> Gerenciamento de estados (states) é responsável por garantir que as informações dos componentes não estão dessincronizadas e facilitar a comunicação de um componente com outro. (Ex.: atualizar carrinho de compra ao clicar no botão de comprar de um produto)
+
+Ferramentas de gerenciamento de estados: FLUX, REDUX, CONTEXT API, RECOIL, STOREON, VUEX, NGRX, NGXS
+
+-> Roteamento (routes ou routing & navigation) é responsável pela forma de navegar fazendo a troca de URL sem Recarregar a página, mudando somente os componentes que são mostrados. (Ex.: meuapp/login, meuapp/home)
+
+Exemplos de bibliotecas: istory API, REact-Router, Vue-Router, Angular RoutingModule.
+
+-> Renderização (render) é responsável por decidir a melhor maneira de acessar e entregar para o browser o compoentente pronto para que eele seja desenhado na janela sem complicações.
+
+Tipos de renderização: 100% server (servidor entrega o que você precisa), Parte server e parte client (uma parte renderizada no servidor e outra no cliente), 100% Client (tudo é renderizado no lado do cliente - Angular por default é 100% client).
+
+SEO (ranking do site em sites de busca)
+
+
+Estrutura de pastas: toda a parte codável fica dentro da pasta src. Tudo que fica fora é configuração.
+
+o arquivo polyfills serve para codar o que não é renderizável por alguns navegadores.
+
+
+---------------------- COMPONENTES --------------------------------
+
+Visual, customizável e replicável é o átomo da aplicação.
+
+Geralmente é uma função JS/TS que retorna HTML, CSS e carrega eventos javascript junto.
+
+Como a aplicação é montada? Pela injeção de dependências.
+
+Injeção de dependências é um padrão de desenvolvimento. Uma injeção é feita quando algo depende de outra coisa para seu funcionamento, mas ele não produz diretamente esse conteúdo, tendo a dependência de algum agente externo.
+
+
+
+
+
+
+
